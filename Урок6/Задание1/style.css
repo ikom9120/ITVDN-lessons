@@ -1,0 +1,46 @@
+h1 {
+    font-family: Arial, sans-serif;
+    background-color: lightgray;
+    text-align: center;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+.subtitle1 {
+    word-spacing: 10px;
+}
+
+.subtitle2 {
+    letter-spacing: 5px;
+}
+
+.txt1 {
+    font-size: 30px;
+    background-color: lightgreen;
+    font-style: italic;
+}
+
+.txt2 {
+    background-color: aqua;
+    font-weight: bold;
+}
+
+.txt3 {
+    background-color: coral;
+    text-indent: 40px;
+}
+
+button {
+    width: 100px;
+    background-color: lightgray;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.btn3 {
+    text-align: right;
+}

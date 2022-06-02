@@ -1,0 +1,65 @@
+.nav {
+    background-color: lightgray;
+    padding: 10px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 50px;
+    letter-spacing: 5px;
+}
+
+p {
+    margin: 0;
+    font-size: 15px;
+}
+
+.logo {
+    border: 1px solid;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logo-txt {
+    margin-left: 10px;
+    margin-top: 15px;
+    color: black;
+    text-transform: uppercase;
+}
+
+.nav-list {
+    display: flex;
+}
+
+ul {
+    display: flex;
+    list-style-image: url(phone_icon.png);
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin-right: 70px;
+    padding: 10px 0;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+
+.btn {
+    display: flex;
+    color: white;
+    background-color: orange;
+    border: none;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 50px;
+}
