@@ -1,0 +1,9 @@
+.container {
+    background-color: lightgray;
+    height: 500px;
+    display: flex;
+}
+
+.img {
+    margin: auto;
+}

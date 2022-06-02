@@ -1,0 +1,19 @@
+.container {
+    width: 1200px;
+    display: flex;
+    border: 1px solid black;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.item {
+    border: 1px solid lightgray;
+    padding: 5px;
+    margin: 5px;
+    width: 350px;
+}
+
+.link {
+    text-decoration: none;
+}

@@ -1,0 +1,26 @@
+.nav {
+    background-color: black;
+    font-family: Arial, sans-serif;
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+}
+
+.list {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+}
+
+.item {
+    padding: 35px;
+}
+
+.item:hover {
+    background-color: lightgray;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+}
