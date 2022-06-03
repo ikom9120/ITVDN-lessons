@@ -1,0 +1,13 @@
+ul {
+    list-style: none;
+    display: flex;
+}
+
+li {
+    padding: 20px;
+    border-right: 2px solid grey;
+}
+
+li:last-child {
+    border: none;
+}
