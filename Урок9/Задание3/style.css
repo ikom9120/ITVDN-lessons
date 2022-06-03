@@ -1,0 +1,41 @@
+.container {
+    max-width: 1500px;
+    min-height: 600px;
+    margin: auto;
+    background: url("img/затемненый.png") no-repeat;
+    padding-top: 50px;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+}
+
+.box {
+    width: 25%;
+    margin: 20px;
+    text-align: justify;
+}
+
+h2 {
+    padding-left: 30px;
+}
+
+.subtitle-1 {
+    background: url("img/1.png") no-repeat;
+    background-size: 25px 25px;
+}
+
+.subtitle-2 {
+    background: url("img/2.png") no-repeat;
+    background-size: 25px 25px;
+}
+
+.subtitle-3 {
+    background: url("img/3.png") no-repeat;
+    background-size: 25px 25px;

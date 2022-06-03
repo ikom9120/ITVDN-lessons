@@ -1,0 +1,31 @@
+.container {
+    padding: 50px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+}
+
+.block_1, .block_2 {
+    border: 2px solid lightgray;
+    border-radius: 30px;
+    margin: 0 15px;
+    width: 50%;
+    height: 350px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: 200px 200px;
+    background-position: center 30px;
+}
+
+.block_1 {
+    background-image: url("HTML5.png");
+    background-repeat: no-repeat;
+}
+
+.block_2 {
+    background-image: url("CSS3.png");
+}
+
+h2 {
+    margin-top: 300px;
+}

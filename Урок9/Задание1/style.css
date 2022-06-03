@@ -1,0 +1,13 @@
+.container {
+    width: 1200px;
+    border: 2px solid black;
+}
+
+body {
+    background-image: url("HTML5.png");
+    background-size: 300px 300px;
+    background-position: top right;
+    background-position-y: 30px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
