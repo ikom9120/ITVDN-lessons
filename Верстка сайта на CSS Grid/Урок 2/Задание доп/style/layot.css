@@ -1,0 +1,7 @@
+.d-grid {
+    display: grid;
+    grid-template-columns: auto 40% 30%;
+    grid-template-rows: 100px 100px 50px 100px 50px;
+    grid-gap: 10px;
+}
+
