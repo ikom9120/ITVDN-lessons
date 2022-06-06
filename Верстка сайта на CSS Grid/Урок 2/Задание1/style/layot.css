@@ -1,5 +1,7 @@
 .d-grid {
     display: grid;
-    grid-template-columns: 30% 40% 30%;
+    grid-template-columns: [start-column] 1fr [second-column]2fr  1fr [end-column];
+    grid-template-rows: [start-row] 1fr  2fr[second-row]  1fr[third-row] 1fr [end-column];
 }
+
 
