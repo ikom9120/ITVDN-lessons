@@ -1,0 +1,30 @@
+.d-grid {
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr;
+    grid-template-areas: " menu .  logo"
+    "header header header"
+    "content content content"
+    "content content content"
+    "footer footer footer";
+}
+
+.d-grid div:nth-child(1) {
+    grid-area: menu;
+}
+
+.d-grid div:nth-child(2) {
+    grid-area: logo;
+}
+
+.d-grid div:nth-child(3) {
+    grid-area: header;
+}
+
+.d-grid div:nth-child(4) {
+    grid-area: content;
+}
+
+.d-grid div:nth-child(5) {
+    grid-area: footer;
+}
+

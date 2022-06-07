@@ -1,0 +1,25 @@
+.d-grid {
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr;
+    grid-template-areas: "header header header"
+    "main main sidebar"
+    "main main sidebar"
+    "footer footer footer";
+}
+
+.d-grid div:nth-child(1) {
+    grid-area: header;
+}
+
+.d-grid div:nth-child(2) {
+    grid-area: main;
+}
+
+.d-grid div:nth-child(3) {
+    grid-area: sidebar;
+}
+
+.d-grid div:nth-child(4) {
+    grid-area: footer;
+}
+
