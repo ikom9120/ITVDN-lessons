@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: darkcyan;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Grid*/
+.d-grid {
+    display: grid;
+    width: 50%;
+    grid-template-rows: 50px 1fr 50px;
+}
+
+.block {
+    background-color: #fff;
+    border: 1px solid black;
+    color: darkcyan;
+}
+
+/* Flex*/
+.d-flex {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+}
+
+.d-flex > div:nth-child(odd) {
+    height: 50px;
+}
+
