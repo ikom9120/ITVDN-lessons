@@ -1,0 +1,7 @@
+.d-grid {
+    display: grid;
+    grid-template-columns: 1fr min-content 1fr;
+}
+
+
+

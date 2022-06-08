@@ -1,0 +1,11 @@
+.d-grid {
+    display: grid;
+    grid-template: 100px 100px  /  150px 150px;
+}
+
+.d-grid div {
+  place-self: stretch center;
+}
+
+
+

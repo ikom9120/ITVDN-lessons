@@ -1,0 +1,9 @@
+.d-grid {
+    display: grid;
+    height: 400px;
+    grid-template: 100px 100px  100px / 100px  100px ;
+    place-content: space-between center;
+}
+
+
+
