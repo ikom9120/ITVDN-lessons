@@ -1,0 +1,11 @@
+.d-grid {
+    display: grid;
+    grid-template: repeat(3, 100px) / 1fr  1fr;
+}
+
+.d-grid div:nth-child(6) {
+    order: -1;
+}
+
+
+

@@ -1,0 +1,14 @@
+.d-grid {
+    display: grid;
+    grid-template: repeat(2, 1fr)/1fr 1fr;
+    position: relative;
+}
+
+.d-grid div:nth-child(1), .d-grid div:nth-child(2) {
+    position: relative;
+    top: 100%;
+}
+
+.d-grid div:nth-child(3), .d-grid div:nth-child(4) {
+    opacity: 50%;
+}

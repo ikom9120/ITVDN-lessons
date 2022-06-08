@@ -1,0 +1,14 @@
+.d-grid {
+    display: grid;
+    grid-template: repeat(3, 100px) / repeat(3, 100px);
+    position: relative;
+}
+.d-grid div:nth-child(1) {
+    position: absolute;
+    grid-column: 2/3;
+    grid-row: -3/-2;
+    place-self: center;
+}
+
+
+
