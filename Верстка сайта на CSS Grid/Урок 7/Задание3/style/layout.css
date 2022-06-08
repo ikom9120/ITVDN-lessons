@@ -1,0 +1,8 @@
+.d-grid {
+    display: grid;
+    width: 90%;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+
+
