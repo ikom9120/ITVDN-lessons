@@ -1,0 +1,14 @@
+.d-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 50px 50px;
+}
+
+.d-grid div:nth-child(1) {
+    height: 300px;
+}
+
+.d-grid div:nth-child(2) {
+    margin: 50px;
+}
+
