@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+</head>
+<body>
+<pre>
+Задание
+Создайте массив и внесите в него 10 случайных значений.
+Для создания случайного значения используйте следующий код:
+let randomValue = Math.floor(Math.random() * 101); // случайное значение от 0 до 100 будет
+записано в переменную randomValue
+Выведите все значения, внесенные в массив, на экран с помощью цикла.
+    </pre>
+<script>
+
+    let values = [];
+    for (let i = 0; i < 10; i++) {
+        values[i] = Math.floor(Math.random() * 101);
+    }
+    console.log(values);
+</script>
+</body>
+</html>
