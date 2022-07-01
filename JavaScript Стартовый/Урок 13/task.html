@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+</head>
+
+<body>
+<pre>
+        Задание:
+       В сценарии с помощью литерала создайте объект с двумя свойствами firstName и age. Добавьте
+       в этот объект метод sayHello, который выведет на экран сообщение «Привет, меня зовут X, мне Y
+       лет.». Используя значения свойств вместо X и Y.
+    </pre>
+<script>
+    let user = {
+        firstName: "Mark",
+        age: "26",
+        sayHello: function () {
+            console.log("Привет, меня зовут " + user.firstName + ", мне " + user.age + " лет.")
+        }
+    }
+    console.log(user.sayHello());
+</script>
+</body>
+
+</html>
