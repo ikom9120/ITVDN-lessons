@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        .wrap {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+<div class="block">
+    My text
+</div>
+<ul>
+    <li>item1</li>
+    <li>item2</li>
+    <li>item3</li>
+    <li>item4</li>
+    <li>item5</li>
+    <li>item6</li>
+</ul>
+<p class="block-2"><span>Span text</span></p>
+<script>
+    $(document).ready(function () {
+        $(".block").wrap("<div class='wrap'></div>");
+        $("li").slice(2, 5).text("NewItem");
+        let hasSpan = $(".block-2").has("span");
+        if (hasSpan.length > 0) {
+            $("span").text("NewSpanText");
+        }
+    })
+
+</script>
+</body>
+</html>
