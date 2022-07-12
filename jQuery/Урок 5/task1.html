@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task 1</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+<pre>
+Создайте кнопку и изображение. При нажатии на кнопку увеличивайте ширину и высоту
+изображения на 100рх.
+</pre>
+<button class="btn" style="padding: 20px">Click</button>
+<br><br>
+<img src="img1.webp" alt="лес" title="лес" class="my-img" width="180" height="80">
+<script>
+    $(document).ready(function () {
+        $(".btn").click(function () {
+            let img = $(".my-img");
+            img.css({
+                'width': img.width() + 100,
+                'height': img.height() + 100
+            });
+        })
+    })
+
+</script>
+</body>
+</html>

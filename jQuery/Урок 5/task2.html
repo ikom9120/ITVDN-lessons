@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task 2</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+<pre>
+Создайте скрипт, который при нажатии кнопки будет добавлять background элемента body, а
+когда будет событие подъема клавиши клавиатуры, будет удалять добавленный background.
+</pre>
+
+<script>
+    $(document).ready(function () {
+        $(window).keydown(function () {
+            $("body").css("background", "green")
+        })
+        $(window).keyup(function () {
+            $("body").css("background", "none")
+        })
+    })
+
+</script>
+</body>
+</html>
