@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task 3</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+<pre>
+Создайте скрипт, который при введении значения в инпут меняет цвет элемента формы.
+</pre>
+<form action="#">
+    <input type="text" name="name" id="name" placeholder="Name"><br><br>
+    <input type="text" name="second-name" id="second-name" placeholder="Second Name"><br><br>
+    <input type="text" name="login" id="login" placeholder="Login"><br><br>
+    <input type="password" name="password" id="password" placeholder="Password"><br><br>
+    <input type="submit">
+</form>
+<script>
+    $(document).ready(function () {
+        $("input").focus(function () {
+            $(this).css("background", "green");
+        })
+    })
+
+</script>
+</body>
+</html>
