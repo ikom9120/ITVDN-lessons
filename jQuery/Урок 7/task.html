@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        body {
+            padding: 30px;
+            font-size: 18px;
+            position: relative;
+        }
+
+        div {
+            padding: 10px;
+            background-color: black;
+            color: #fff;
+            margin: 30px 0;
+        }
+
+        button {
+            color: tomato;
+            border: 2px solid tomato;
+            background: whitesmoke;
+            padding: 5px 15px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+<pre>
+Создайте кнопку, по нажатию на которую методом slideToggle() отображайте и скрывайте
+изображение на странице.
+</pre>
+<div class="toggle">
+    Toggle block
+</div>
+<button class="toggle-button">
+    Toggle animation
+</button>
+<script>
+    $(document).ready(function () {
+        $(".toggle-button").click(function () {
+            $(".toggle").slideToggle();
+        });
+    })
+</script>
+</body>
+</html>
