@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task 2</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        body {
+            padding: 30px;
+            font-size: 18px;
+            position: relative;
+        }
+
+        button {
+            color: tomato;
+            border: 2px solid tomato;
+            background: whitesmoke;
+            padding: 5px 15px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+<pre>
+Обработайте результат запроса на jsonplaceholder и отобразите результат на странице.
+</pre>
+<button class="ajax">test</button>
+<h1></h1>
+<p></p>
+<script>
+    $(document).ready(function () {
+
+        $('.ajax').click(function () {
+            $.ajax({
+                url: "https://jsonplaceholder.typicode.com/todos/1",
+                success: function (result) {
+                    console.log(result);
+                    $("h1").text(result.id);
+                    $("p").text(result.title);
+                },
+                error: function (xhr) {
+                    alert(`Error ${xhr.status} error text ${xhr.statusText}`);
+                }
+            });
+        });
+
+    });
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task 3</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        body {
+            padding: 30px;
+            font-size: 18px;
+            position: relative;
+        }
+
+        button {
+            color: tomato;
+            border: 2px solid tomato;
+            background: whitesmoke;
+            padding: 5px 15px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+<pre>
+Создайте запрос на получение 100 постов и отправьте запрос на удаление 10-го поста из списка.
+</pre>
+<button class="ajax">get</button>
+<button class="delete">delete</button>
+
+<script>
+    $(document).ready(function () {
+
+        $('.ajax').click(function () {
+            $.ajax({
+                url: "https://jsonplaceholder.typicode.com/posts",
+                success: function (result) {
+                    console.log(result);
+                },
+                error: function (xhr) {
+                    alert(`Error ${xhr.status} error text ${xhr.statusText}`);
+                }
+            });
+        });
+        $(".delete").click(function () {
+            $.ajax({
+                url: "https://jsonplaceholder.typicode.com/todos/10",
+                type: 'DELETE',
+                success: function (result) {
+                    if (JSON.stringify(result) === "{}") {
+                        alert("Удалено")
+
+                    } else {
+                        alert("Ошибка удаления")
+                    }
+                }
+            });
+        });
+
+    });
+</script>
+</body>
+</html>
