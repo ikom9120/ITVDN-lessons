@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task 2</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+<pre>
+Получить коллекцию объектов и преобразовать их в массив
+</pre>
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+<script>
+    $(document).ready(function () {
+        let inArr = ['Angular', 'React', 'Vue'];
+        let li = $("li");
+        li.eq(0).text($.inArray("React", inArr));
+        li.eq(1).text($.inArray("Vue", inArr));
+        li.eq(2).text($.inArray("Angular", inArr));
+
+        console.log(li);
+        let elemArr = $.makeArray(li);
+        console.log(elemArr);
+        console.log($.isArray(elemArr));
+    });
+
+</script>
+</body>
+</html>

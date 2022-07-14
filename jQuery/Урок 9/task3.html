@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task 3</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        body {
+            padding: 30px;
+            font-size: 20px;
+        }
+
+        button {
+            color: tomato;
+            border: 2px solid tomato;
+            background: whitesmoke;
+            padding: 5px 15px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+<pre>
+С помощью метода nonConflict создать свое уникальное имя переменной и проверить
+работоспособность методов.
+</pre>
+<p></p>
+<button>Test button</button>
+<script>
+    $(document).ready(function () {
+
+        let jQ = $.noConflict();
+        jQ(document).ready(function () {
+            jQ("p").text("It work");
+            jQ("button").click(function () {
+                alert("work");
+            });
+        });
+
+    });
+</script>
+</body>
+</html>
