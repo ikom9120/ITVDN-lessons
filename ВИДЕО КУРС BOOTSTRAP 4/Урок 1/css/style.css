@@ -1,0 +1,11 @@
+.row {
+    background: #50bee2;
+}
+
+.col:nth-child(even) {
+    background: lightcoral;
+}
+
+.col:nth-child(odd) {
+    background: yellow;
+}
