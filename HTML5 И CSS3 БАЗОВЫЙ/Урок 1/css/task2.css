@@ -1,0 +1,63 @@
+body {
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    line-height: 80px;
+}
+
+.container {
+    background: black;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+header, nav, section, aside, footer {
+    background: gray;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+main {
+    display: flex;
+    min-height: 500px;
+}
+
+nav {
+    width: 20%;
+}
+
+section {
+    width: 60%;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+section header {
+    height: 15%;
+    background: lightgray;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+
+section article {
+    height: 45%;
+    background: lightgray;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+section footer {
+    background: lightgray;
+    margin: 10px;
+    border-radius: 10px;
+    justify-content: center;
+    height: 15%;
+}
+
+aside {
+    width: 20%;
+}

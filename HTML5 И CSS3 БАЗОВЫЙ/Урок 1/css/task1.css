@@ -1,0 +1,39 @@
+body {
+    margin: 0 auto;
+    width: 80%;
+    color: #ffffff;
+    text-align: center;
+    font-size: 24px;
+    line-height: 80px;
+}
+
+header {
+    background: #e1122c;
+}
+
+nav {
+    background: #f1902d;
+}
+
+.wrp {
+    display: flex;
+}
+
+section {
+    background: #ffbd07;
+    width: 70%;
+
+}
+
+article {
+    background: #7ac141;
+}
+
+aside {
+    background: #0184d6;
+    width: 30%;
+}
+
+footer {
+    background: #902c8e;
+}
