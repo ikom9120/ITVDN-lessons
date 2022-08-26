@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task 3</title>
+</head>
+<body>
+<canvas id="myCanvas" width="400" height="200" style="border:1px solid #000000;">
+</canvas>
+<script>
+    var canvas = document.getElementById("myCanvas"),
+        context = canvas.getContext("2d");
+    context.beginPath();
+    context.rect(10, 30, 380, 70);
+    context.closePath();
+    context.strokeStyle = "blue";
+    context.fillStyle = "blue";
+    context.fill();
+    context.stroke();
+    // рисуем второй зеленый прямоугольник
+    context.beginPath();
+    context.rect(10, 100, 380, 70);
+    context.closePath();
+    context.strokeStyle = "yellow";
+    context.fillStyle = "yellow";
+    context.fill();
+    context.stroke();
+</script>
+</body>
+</html>

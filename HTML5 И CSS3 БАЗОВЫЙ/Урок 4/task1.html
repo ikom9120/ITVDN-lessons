@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task 1</title>
+<body>
+<canvas id="myCanvas" width="400" height="250" style="border:1px solid #d3d3d3;   display: block;
+   margin: 0 auto;">
+    Your browser does not support the HTML5 canvas tag.
+</canvas>
+
+<script>
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    // img = new Image();
+    var grd = ctx.createRadialGradient(200, 125, 100, 200, 125, 50);
+    grd.addColorStop(0, "red");
+    grd.addColorStop(1, "black");
+    ctx.fillStyle = grd;
+    ctx.fillRect(0, 0, 400, 250);
+</script>
+</body>
+</html>
