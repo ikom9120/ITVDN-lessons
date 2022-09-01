@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task 1</title>
+    <style type="text/css">
+        .wrp{
+           background-color: lightgrey;
+        }
+    </style>
+    <script>
+        if (window.addEventListener) window.addEventListener("load", loadHandler, false);
+
+        function loadHandler() {
+
+            var pArray = document.querySelectorAll(".wrp-txt p");
+
+            for (var i = 0; i < pArray.length; i++) {
+                pArray[i].style.border = "solid 1px green";
+
+            }
+            var e = document.querySelector(".link"); // $(".test") - эквивалент в jQuery
+
+            var y = document.querySelector("#span");
+
+
+
+
+            e.style.border = "red";
+            y.style.border = "blue";
+        }
+    </script>
+</head>
+
+<body>
+<div class="wrp">Lorem
+    <div class="wrp-txt">
+        <p class="txt"> Lorem ipsum dolor sit amet.</p>
+        <p class="txt">Lorem Lorem ipsum dolor sit amet,<span id="span">Span lorem</span> consectetur adipisicing elit. Accusamus adipisci architecto eaque eveniet
+            praesentium quas quis voluptates. Accusamus animi distinctio ex incidunt ipsam quo sequi sint vitae?
+            Eligendi facilis, itaque.</p>
+        <p>123</p>
+        <a class="link">Link</a>
+    </div>
+
+
+</div>
+</body>
+</html>
