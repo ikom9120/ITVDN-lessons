@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task 1</title>
+    <style>
+        p > label {
+            width: 200px;
+            float: left;
+            margin: 3px 0 0 0;
+        }
+
+        input:valid {
+            background-color: lightgreen;
+        }
+
+        input:invalid {
+            background-color: lightcoral;
+        }
+
+        input:required + label:after {
+            content: "*";
+            color: red;
+        }
+
+        #submit {
+            background-color: lightgrey;
+        }
+
+        #submit:hover {
+            background-color: grey;
+        }
+
+        #submit:active {
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+
+<form action="#" method="post">
+    <p>
+        <input id="login" type="text" name="login" required="required">
+        <label for="login">Login:</label>
+
+    </p>
+    <p>
+        <input id="password" type="password" name="password" required="required">
+        <label for="password">Password:</label>
+    </p>
+    <p>
+        <input id="password_2" type="password" name="password_2" required="required">
+        <label for="password_2">Confirm the password:</label>
+    </p>
+    <p>
+        <input id="email" type="email" name="email" required="required">
+        <label for="email">Email:</label>
+    </p>
+    <p>
+        <input type="date" id="date" name="date" required="required">
+        <label for="date">Date of Birth: </label>
+    </p>
+    <p><input type="submit" id="submit" value="Send"></p>
+</form>
+</body>
+</html>
